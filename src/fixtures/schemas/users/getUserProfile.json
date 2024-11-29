@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+      "id",
+      "username",
+      "firstName",
+      "lastName",
+      "password",
+      "createdAt",
+      "updatedAt"
+  ],
+  "additionalProperties": false,
+  "properties": {
+      "id": {
+          "type": "integer"
+      },
+      "username": {
+          "type": "string"
+      },
+      "firstName": {
+          "type": "string"
+      },
+      "lastName": {
+          "type": "string"
+      },
+      "createdAt": {
+          "type": "string"
+      },
+      "updatedAt": {
+          "type": "string"
+      }
+  }
+}

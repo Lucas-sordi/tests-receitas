@@ -1,0 +1,40 @@
+{
+  "type": "array",
+  "additionalItems": true,
+  "items": {
+      "type": "object",
+      "required": [
+          "id",
+          "avaliation",
+          "comment",
+          "createdAt",
+          "updatedAt",
+          "recipeId",
+          "userId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+          "id": {
+              "type": "integer"
+          },
+          "avaliation": {
+              "type": "integer"
+          },
+          "comment": {
+              "type": ["string", "null"]
+          },
+          "createdAt": {
+              "type": "string"
+          },
+          "updatedAt": {
+              "type": "string"
+          },
+          "recipeId": {
+              "type": "integer"
+          },
+          "userId": {
+              "type": "integer"
+          }
+      }
+  }
+}

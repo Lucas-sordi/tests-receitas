@@ -1,0 +1,22 @@
+{
+  "name": "api_test_template",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Template to Api test",
+  "main": "index.js",
+  "scripts": {
+    "test": "set TARGET=local&&jest",
+    "test:local": "set TARGET=local&&jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@faker-js/faker": "^8.1.0",
+    "jest": "^29.7.0",
+    "jest-html-reporters": "^3.1.7",
+    "jsonschema": "^1.4.1",
+    "supertest": "^7.0.0"
+  }
+}

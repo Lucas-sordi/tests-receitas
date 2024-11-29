@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+      "avaliation",
+      "comment",
+      "recipeId",
+      "userId",
+      "id",
+      "createdAt",
+      "updatedAt"
+  ],
+  "additionalProperties": false,
+  "properties": {
+      "avaliation": {
+          "type": "integer"
+      },
+      "comment": {
+          "type": ["string", "null"]
+      },
+      "recipeId": {
+          "type": "integer"
+      },
+      "userId": {
+          "type": "integer"
+      },
+      "id": {
+          "type": "integer"
+      },
+      "createdAt": {
+          "type": "string"
+      },
+      "updatedAt": {
+          "type": "string"
+      }
+  }
+}

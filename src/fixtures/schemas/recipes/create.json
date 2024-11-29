@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "required": [
+      "name",
+      "ingredients",
+      "instructions",
+      "preparationTime",
+      "cookingTime",
+      "totalTime",
+      "servings",
+      "userId",
+      "id",
+      "views",
+      "createdAt",
+      "updatedAt"
+  ],
+  "additionalProperties": false,
+  "properties": {
+      "name": {
+          "type": "string"
+      },
+      "ingredients": {
+          "type": "array",
+          "items": {
+              "type": "string"
+          }
+      },
+      "instructions": {
+          "type": "string"
+      },
+      "preparationTime": {
+          "type": "integer"
+      },
+      "cookingTime": {
+          "type": "integer"
+      },
+      "totalTime": {
+          "type": "integer"
+      },
+      "servings": {
+          "type": "integer"
+      },
+      "userId": {
+          "type": "integer"
+      },
+      "id": {
+          "type": "integer"
+      },
+      "views": {
+          "type": "integer"
+      },
+      "createdAt": {
+          "type": "string"
+      },
+      "updatedAt": {
+          "type": "string"
+      }
+  }
+}
