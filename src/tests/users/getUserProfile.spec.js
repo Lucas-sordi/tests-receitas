@@ -5,9 +5,8 @@ import { Auth } from '../../fixtures/factory/auth.factory';
 describe("GET Buscar perfil do usuário - /user/profile", () => {
 
   test("deve buscar o perfil do usuário logado com sucesso", async () => {
-    let authToken = 'Bearer ';
     const userData = Auth.generateUser();
-    authToken += await createUserAndDoLogin(userData);
+    const authToken = `Bearer ${await createUserAndDoLogin(userData)}`;
 
     const res = await request.get('/user/profile')
       .set('Content-Type', 'application/json')
